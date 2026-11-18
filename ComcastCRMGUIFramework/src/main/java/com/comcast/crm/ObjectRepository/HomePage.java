@@ -17,6 +17,8 @@ package com.comcast.crm.ObjectRepository;
 			this.driver = driver;
 			PageFactory.initElements(driver, this);
 		}
+		@FindBy(linkText = "Products")
+		private WebElement ProductLink;
 		
 		@FindBy(linkText = "Organizations")
 		private WebElement orgLink;
@@ -43,6 +45,10 @@ package com.comcast.crm.ObjectRepository;
 			return adminImg1;
 		}
 
+		public WebElement GetProductLink() {
+			return ProductLink;
+		}
+		
 		public WebElement getOrgLink() {
 			return orgLink;
 		}
