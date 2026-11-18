@@ -33,7 +33,7 @@ public class CreateContactTest<jLib> extends BaseClass{
 
 		// Step 4:Enter all the details & create new organization
 		CreateNewContactPage ccp = new CreateNewContactPage(driver);
-		ccp.CreateContact(lastName);   	
+		ccp.createContact(lastName);   	
 		
 		//Verify Header
 		String actHeader = cp.getHeaderMsg().getText();
