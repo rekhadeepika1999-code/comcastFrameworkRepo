@@ -1,5 +1,21 @@
 package com.comcast.crm.ObjectRepository;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
 public class Contactpage {
+	WebDriver driver;
+	public Contactpage(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+	}
+	@FindBy(linkText = "Contact")
+	private WebElement ContactLink;
+	
+	public WebElement getContactLink() {
+		return ContactLink;
+	}
 
 }
