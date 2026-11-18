@@ -13,9 +13,17 @@ public class Contactpage {
 	}
 	@FindBy(linkText = "Contact")
 	private WebElement ContactLink;
+	@FindBy(linkText = "ele2")
+	private WebElement ele2;
 	
 	public WebElement getContactLink() {
 		return ContactLink;
 	}
+	
+	public WebElement ele2() {
+		return ele2;
+	}
+	
+	
 
 }
