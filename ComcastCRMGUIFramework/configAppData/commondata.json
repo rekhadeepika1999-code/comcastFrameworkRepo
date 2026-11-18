@@ -1,0 +1,7 @@
+{
+  "browser" : "chrome",
+"url" : "http://demowebshop.tricentis.com/s",
+"username" : "admin",
+"password" : "admin",
+"timeout":20
+}
